@@ -6,7 +6,7 @@ import player.Player;
 // TODO implements minions' modification as a Decorator design pattern
 // TODO event serialisation queue
 // TODO design a property structure for owned objects
-// TODO github repo
+// TODO hashcode equals
 
 public class Game {
 	

@@ -12,8 +12,8 @@ public class Deck extends OwnedObject {
 	private List<Card> cards;
 	private int DeathCardCounter = 0;
 	
-	public Deck(Player owner) {
-		super(owner);
+	public Deck() {
+		super();
 		cards = new LinkedList<Card>();
 	}
 	

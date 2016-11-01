@@ -8,8 +8,8 @@ import game.Game;
 public class DeathCard extends Card {
 	private int damage;
 
-	public DeathCard(int damage, Player owner) {
-		super(owner);
+	public DeathCard(int damage) {
+		super();
 		this.damage = damage;
 	}
 	

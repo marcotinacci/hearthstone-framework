@@ -1,4 +1,4 @@
-package game;
+package player;
 
 import static org.junit.Assert.fail;
 

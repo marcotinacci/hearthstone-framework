@@ -6,11 +6,6 @@ import player.Player;
 public abstract class OwnedObject {
 	private Player owner;
 
-	public OwnedObject(Player owner) {
-		super();
-		this.owner = owner;
-	}
-
 	public Player getOwner() {
 		return owner;
 	}

@@ -5,7 +5,6 @@ import cards.EClass;
 import cards.EClass.Type;
 
 public class Player {
-	// TODO hashcode equals etc
 	
 	private Deck deck;
 	private EClass playerClass;
@@ -13,10 +12,16 @@ public class Player {
 	private Board board;
 	
 	public Player(EClass playerClass){
-		this.deck = new Deck(this);
+		this.deck = new Deck();
+		this.deck.setOwner(this);
 		if(!playerClass.isType(Type.PLAYER))
 			throw new IllegalArgumentException("Wrong class "+playerClass+", a player class expected.");
 		this.playerClass = playerClass;
+	}
+	
+	public Player(Deck deck, EClass playerClass){
+		this(playerClass);
+		board = new Board();
 	}
 
 	public Hero getHero() {

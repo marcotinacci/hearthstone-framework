@@ -1,16 +1,11 @@
 package cards;
 
-import player.Player;
-import targets.ITarget;
 import events.Delegate;
 import events.EmptyDelegate;
 import game.OwnedObject;
+import targets.ITarget;
 
 public abstract class Card extends OwnedObject {
-	
-	public Card(Player owner) {
-		super(owner);
-	}
 	
 	public abstract String getFlavourText();
 	public abstract String getCardText();
@@ -23,7 +18,6 @@ public abstract class Card extends OwnedObject {
 	/**
 	 * Event handlers that must be implemented
 	 */
-	
 	
 	/**
 	 * Event handlers that may be overridden
